@@ -8,12 +8,12 @@
     </div>
     <div class="row pt-3">
         @foreach ($authors as $author)
-            <a href="{{ route('authors.show', $author -> id)}}">
+            <a href="{{ route('authors.show', $author -> id)}}" class="text-black">
                 <h3 class="display4">{{$author -> first_name}} {{$author -> last_name}}</h3>   </a>         
-            <p>{{$author -> biography}}</p>            
-            <p>Nationality: {{$author -> nationality}}</p>            
-            <p>Language: {{$author -> language}}</p>            
-            <p>Birth Place: {{$author -> birthplace}}</p>            
+            <p>{{$author -> biography}}</p>    
+            <p class="card-text">Nationality: <span class="fw-bold" >{{$author -> nationality}}</span> </p>                
+            <p class="card-text">Language: <span class="fw-bold" >{{$author -> language}}</span> </p>                
+            <p class="card-text">Birth Place: <span class="fw-bold" >{{$author -> birthplace}}</span> </p>                         
             <hr>
         @endforeach
     </div>

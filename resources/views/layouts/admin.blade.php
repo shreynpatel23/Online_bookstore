@@ -8,6 +8,7 @@
     <!-- TAILWIND CSS CDN  -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <title>Amazon Bookstore</title>
+    <link rel="stylesheet" href={{ asset('/css/app.css') }}>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
